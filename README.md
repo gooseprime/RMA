@@ -28,6 +28,68 @@ This project presents a comprehensive analysis of menstrual health data using ad
 2. **Nervousness** (OR = 0.599) - Decreases Risk
 3. **Confusion** (OR = 0.607) - Decreases Risk
 
+## 🖼️ Dashboard Preview
+
+### What You'll See When You Run the App
+
+The Streamlit dashboard provides an interactive interface with 5 main sections:
+
+#### 📈 Overview Tab - Dataset Summary
+- **Key Metrics**: Total participants (271), heavy periods (11.1%), symptoms analyzed (19)
+- **Period Distribution**: Interactive pie chart showing heavy vs non-heavy periods
+- **Age Distribution**: Histogram of participant ages with detailed explanations
+- **Data Quality**: Completeness indicators (96.9% complete)
+
+#### 🤖 Logistic Regression Tab - Model Analysis
+- **Model Performance**: Accuracy (85.4%), ROC AUC (0.450), training samples
+- **ROC Curve**: Interactive plot with detailed explanation of model performance
+- **Feature Importance**: Horizontal bar chart showing which symptoms predict heavy periods
+- **Detailed Analysis**: Table with coefficients, odds ratios, and statistical significance
+
+#### 📊 Symptom Analysis Tab - Interactive Exploration
+- **Symptom Selection**: Multi-select dropdown to choose specific symptoms
+- **Box Plots**: Side-by-side comparison of symptom severity by period type
+- **Statistical Tests**: T-tests and correlation analysis with p-values
+- **Significance Testing**: Color-coded results showing significant associations
+
+#### 🔍 Interactive Explorer Tab - Demographics & Correlations
+- **Demographics Analysis**: Age and weight distributions by period type
+- **Correlation Matrix**: Heatmap showing relationships between symptoms
+- **Customizable Analysis**: Select symptoms for correlation analysis
+- **Visual Exploration**: Interactive plots with hover tooltips
+
+#### 📋 Reports Tab - Comprehensive Summary
+- **Key Findings**: Model performance and clinical insights
+- **Risk Factors**: Top predictors with odds ratios and significance
+- **Clinical Recommendations**: Actionable insights for healthcare
+- **Download Reports**: Export analysis results as text files
+
+### Sample Visualizations
+
+```
+📊 Period Heaviness Distribution
+┌─────────────────────────────────────┐
+│  🩸 Heavy Periods: 11.1% (30)      │
+│  🔵 Non-Heavy: 88.9% (241)         │
+└─────────────────────────────────────┘
+
+📈 ROC Curve Performance
+┌─────────────────────────────────────┐
+│  AUC = 0.450 (Below Random)        │
+│  Model struggles with class         │
+│  imbalance (11.1% vs 88.9%)        │
+└─────────────────────────────────────┘
+
+🎯 Top Risk Factors
+┌─────────────────────────────────────┐
+│  1. Difficulty in Sleeping (OR=1.77)│
+│  2. Weight Gain (OR=1.72)          │
+│  3. Mood Swings (OR=1.31)          │
+│  4. Depression (OR=1.23)           │
+│  5. Restlessness (OR=1.23)         │
+└─────────────────────────────────────┘
+```
+
 ## 🚀 Quick Start
 
 ### Windows Users (Easiest)
@@ -55,6 +117,9 @@ The Streamlit dashboard provides five main sections:
 4. **🔍 Interactive Explorer**: Demographics and correlation analysis
 5. **📋 Reports**: Comprehensive summaries and downloads
 
+### 📖 Detailed Visual Guide
+For a complete walkthrough with screenshots and detailed explanations of what you'll see, check out the **[Visual Guide](VISUAL_GUIDE.md)** - it shows exactly what each tab looks like and how to use all the features.
+
 ## 📁 Project Structure
 
 ```
@@ -66,7 +131,10 @@ menstrual-health-analysis/
 ├── 🌐 streamlit_app.py              # Main dashboard
 ├── 🪟 run_analysis.bat              # Windows batch file
 ├── 📦 requirements.txt              # Dependencies
-└── 📖 README.md                     # This file
+├── 📖 README.md                     # This file
+├── 🖼️ VISUAL_GUIDE.md               # Detailed visual walkthrough
+├── 🔬 TECHNICAL_DOCUMENTATION.md    # Technical specifications
+└── 📋 PROJECT_SUMMARY.md            # Complete project overview
 ```
 
 ## 🏗️ Technical Architecture
